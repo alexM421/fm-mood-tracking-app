@@ -1,26 +1,162 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Text Presets – Reddit Sans, Bold */
+.text-preset-1 {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 140%;
+  letter-spacing: -2px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.text-preset-2 {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.text-preset-3 {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+}
+
+/* Text Presets 4, 5, 6 – Reddit Sans */
+.text-preset-4 {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4-regular {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.text-preset-5 {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.text-preset-6 {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-6-italic {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0px;
+}
+
+.text-preset-6-regular {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+}
+
+/* Text Presets 7, 8, 9 – Reddit Sans */
+.text-preset-7-regular {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+}
+
+.text-preset-8-semibold {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-9-regular {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+
+
+@media (max-width: 768px) {
+  .text-preset-1 {
+    font-size: 46px;
+    line-height: 120%;
+  }
+  
+  .text-preset-2 {
+    font-size: 32px;
+  }
+  
+  .text-preset-3 {
+    font-size: 28px;
+    line-height: 130%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+:root {
+  /* Neutral */
+  --neutral-900: #21214D;
+  --neutral-600: #57577B;
+  --neutral-300: #9393B7;
+  --neutral-200: #CBCDD0;
+  --neutral-0: #FFFFFF;
+
+  /* Blue */
+  --blue-700: #2A4CD5;
+  --blue-600: #4865DB;
+  --blue-300: #89CAFF;
+  --blue-200: #C7D3F7;
+  --blue-100: #E0E6FA;
+
+  /* Red */
+  --red-700: #E60013;
+  --red-300: #FF9B99;
+
+  /* Indigo */
+  --indigo-200: #B8B1FF;
+
+  /* Green */
+  --green-300: #89E780;
+
+  /* Amber */
+  --amber-300: #FFC97C;
+
+  /* Gradient */
+  --light-gradient: linear-gradient(180deg, #F5F5FF 72.99%, #E0E0FF 100%);
+}
+
+/*defaults*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
